@@ -2,12 +2,10 @@
   package="com.sambatruck">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <!-- Define ACCESS_FINE_LOCATION if you will use enableHighAccuracy=true  -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-
-    <!-- Define ACCESS_COARSE_LOCATION if you will use enableHighAccuracy=false  -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-
+    
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
@@ -18,8 +16,8 @@
       <meta-data
         android:name="com.google.android.geo.API_KEY"
         android:value="@string/GOOGLE_MAPS_API_KEY" />
-      <!-- You will also only need to add this uses-library tag -->
-      <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+      <!-- You will also only need to add this uses-library tag
+      <uses-library android:name="org.apache.http.legacy" android:required="false"/> -->
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"

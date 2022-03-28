@@ -4,6 +4,11 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
+// RECAT NATIVE LIB IMPORTS
+#import "ReactNativeConfig.h"
+#import <GoogleMaps/GoogleMaps.h>
+
+
 #ifdef FB_SONARKIT_ENABLED
 #import <FlipperKit/FlipperClient.h>
 #import <FlipperKitLayoutPlugin/FlipperKitLayoutPlugin.h>
@@ -11,13 +16,6 @@
 #import <FlipperKitNetworkPlugin/FlipperKitNetworkPlugin.h>
 #import <SKIOSNetworkPlugin/SKIOSNetworkAdapter.h>
 #import <FlipperKitReactPlugin/FlipperKitReactPlugin.h>
-
-// RECAT NATIVE LIB IMPORTS
-#import "ReactNativeConfig.h"
-#import <GoogleMaps/GoogleMaps.h>
-
-
-
 
 static void InitializeFlipper(UIApplication *application) {
   FlipperClient *client = [FlipperClient sharedClient];
